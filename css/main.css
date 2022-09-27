@@ -4,6 +4,7 @@
     height: 100%;
     border: 1px solid #fff;
   }
+
   to {
     width: 150%;
     height: 150%;
@@ -16,6 +17,7 @@
     height: 100%;
     border: 1px solid #fff;
   }
+
   to {
     width: 150%;
     height: 150%;
@@ -28,6 +30,7 @@
     transform: translateY(-50%);
     opacity: 0;
   }
+
   to {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -41,6 +44,7 @@
     transform: translateY(-50%);
     opacity: 0;
   }
+
   to {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -450,9 +454,9 @@ textarea {
 
 .about-me__card-img {
   width: 100%;
-  margin-bottom: 2em;
-  -o-object-fit: contain;
-  object-fit: contain;
+  margin-bottom: 1em;
+  -o-object-fit: fill;
+  object-fit: fill;
   border: 0.5rem solid rgba(0, 0, 0, 0.6);
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 0 1rem #000;
@@ -709,37 +713,46 @@ textarea {
 }
 
 @media (min-width: 768px) {
+
   body,
   input,
   textarea {
     font-size: 1.8rem;
   }
+
   .heading-underline {
     font-size: 4rem;
   }
+
   .header__title {
     font-size: 6rem;
   }
+
   .header__paragraph {
     font-size: 2rem;
   }
+
   .header__link {
     width: 6rem;
     height: 6rem;
   }
+
   .header__link-arrow {
     font-size: 3rem;
   }
+
   .resume__section {
     margin: 0;
   }
+
   .resume-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2em;
   }
+
   .resume__title {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -748,6 +761,7 @@ textarea {
     -ms-grid-column-span: 3;
     grid-column: 1/4;
   }
+
   .resume__contact {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -756,6 +770,7 @@ textarea {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
   }
+
   .resume__languages {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
@@ -764,6 +779,7 @@ textarea {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
   }
+
   .resume__skills {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -772,6 +788,7 @@ textarea {
     -ms-grid-column-span: 2;
     grid-column: 2/4;
   }
+
   .resume__experience {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
@@ -780,6 +797,7 @@ textarea {
     -ms-grid-column-span: 3;
     grid-column: 1/4;
   }
+
   .resume__education {
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
@@ -788,6 +806,7 @@ textarea {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
   }
+
   .resume__certificates {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
@@ -796,6 +815,7 @@ textarea {
     -ms-grid-column-span: 2;
     grid-column: 2/4;
   }
+
   .resume__interests {
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
@@ -804,10 +824,12 @@ textarea {
     -ms-grid-column-span: 2;
     grid-column: 2/4;
   }
+
   .resume__name {
     font-size: 3rem;
     padding: 2em;
   }
+
   .resume__flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -821,27 +843,34 @@ textarea {
   .heading-underline {
     font-size: 5rem;
   }
+
   .header__title {
     font-size: 8rem;
   }
+
   .header__link {
     width: 8rem;
     height: 8rem;
   }
+
   .header__link-arrow {
     font-size: 4rem;
   }
+
   .hamburger {
     display: none;
   }
+
   .nav__mobile {
     display: none;
   }
+
   .nav__desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   .about-me__card {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -851,6 +880,7 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
   }
+
   .about-me__card-img {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -858,17 +888,28 @@ textarea {
     width: 40%;
     margin: 0 3em 0 0;
   }
+
+  .about-me__card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .projects__card-title {
     font-size: 2.5rem;
   }
+
   .resume__list {
     font-size: 1.6rem;
   }
+
   .resume__name {
     font-size: 4rem;
   }
+
   .resume__icon {
     font-size: 3rem;
   }
 }
+
 /*# sourceMappingURL=main.css.map */
